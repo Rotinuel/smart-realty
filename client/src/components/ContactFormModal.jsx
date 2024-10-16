@@ -32,3 +32,5 @@ const ContactFormModal = ({ isOpen, onClose, onsubmit}) =>{
         </div>
     )
 }
+
+export default ContactFormModal
