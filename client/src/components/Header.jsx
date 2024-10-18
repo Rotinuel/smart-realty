@@ -3,7 +3,7 @@ import {Link, useNavigate } from "react-router-dom";
 import { useSelector } from "react-redux";
 import { useEffect, useState } from "react";
 const Header = () => {
-    const { currentUser } = useSelector((state) => state.user);
+    const { currentUser } = useSelector((state) => state.user || {});
     const [searchTerm, setSearchTerm] = useState("");
     const navigate = useNavigate();
 
@@ -25,6 +25,9 @@ const Header = () => {
       setSearchTerm(searchTermFromUrl);
     }
   }, [location.search]);
+
+
+
 
 
   return (
