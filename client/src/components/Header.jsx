@@ -31,13 +31,61 @@ const Header = () => {
 
 
   return (
-    <header className="bg-white shadow-md">
-        <div className="flex justify-between items-center max-w-6xl mx-auto p-3">
+    <header className="bg-white shadow-md px-48">
+      {/* left side menu */}
+     <div className="container mx-auto flex justify-between items-center h-20">
+     <div className="">
+      <ul className="flex space-x-6">
+        <Link to="/Buy">
+          <li className="hidden sm:inline text-gray-800 hover:text-blue-500 font-medium">Buy</li>
+        </Link> <Link to="/Rent">
+          <li className="hidden sm:inline text-gray-800 hover:text-blue-500 font-medium">Rent</li>
+        </Link> <Link to="/Sell">
+          <li className="hidden sm:inline text-gray-800 hover:text-blue-500 font-medium">Sell</li>
+        </Link>
+        <Link to="/Buy">
+          <li className="hidden sm:inline text-gray-800 hover:text-blue-500 font-medium">Home Loans</li>
+        </Link> 
+        <Link to="/Rent">
+          <li className="hidden sm:inline text-gray-800 hover:text-blue-500 font-medium">Find an Agent</li>
+        </Link>
+      </ul>
+      </div>
+      {/* logo in the center */}
+      <div className="flex-shrink-0">
+        <span className=''>
+            <img className="w-20 h-20" src="/smart_realty.jpeg" alt="smart_realty"/>
+        </span>
+      </div>
+      {/* Right Side Menu */}
+      <div className="">
+      <ul className="flex space-x-6">  
+       <Link to="/Sell">
+          <li className="hidden sm:inline text-gray-800 hover:text-blue-500 font-medium">Manage Rentals</li>
+        </Link>
+        <Link to="/Buy">
+          <li className="hidden sm:inline text-gray-800 hover:text-blue-500 font-medium">Advertise</li>
+        </Link>
+        <Link to="/Rent">
+          <li className="hidden sm:inline text-gray-800 hover:text-blue-500 font-medium">Help</li>
+        </Link>
+        <Link to="/sign-in">
+          <li className="font-medium">Sign In</li>
+        </Link>
+      </ul>
+      </div>
+     </div>
+
+      {/* Sign In Button */}
+      <div >
+        
+      </div>
+     
+
+        {/* <div className="flex items-center">
             <Link to="/">
             <h1 className="font-bold text-sm sm:text-xl flex flex-wrap">
-                <span className=''>
-                    <img className="w-16 h-16" src="/smart_realty.jpeg" alt="smart_realty"/>
-                </span>
+                
             </h1>
             </Link>
             <form onSubmit={handleSubmit} className="bg-slate-100 p-3 rounded-lg flex items-center">
@@ -53,14 +101,9 @@ const Header = () => {
           <FaSearch className="text-slate-600" />
           </button>
         </form>
-            <ul className="flex gap-4">
-                <Link to="/">
-                <li className="hidden sm:inline text-slate-700 hover:underline">Home</li>
-                </Link>
-                <Link to="/about">
-                <li className="hidden sm:inline text-slate-700 hover:underline">About</li>
-                </Link>
-                <Link to="/profile">
+            <ul className="flex gap-4"> */}
+                
+                {/* <Link to="/profile">
             {currentUser ? (
               <img
                 src={currentUser.avatar}
@@ -70,9 +113,9 @@ const Header = () => {
             ) : (
               <li className="text-slate-700 hover:underline">Sign In</li>
             )}
-          </Link>
-            </ul>
-        </div>
+          </Link> */}
+            {/* </ul>
+        </div> */}
     </header>
   )
 }
