@@ -19,7 +19,7 @@ const CreateListing = () => {
     type: "rent",
     bedrooms: 1,
     bathrooms: 1,
-    regularPrice: 50,
+    regularPrice: 500,
     discountPrice: 0,
     offer: false,
     parking: false,
